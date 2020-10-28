@@ -5,7 +5,7 @@ function testFunc() {
 }
 
 
-function superbowlWin(record) {
-    return record.result == "W";
+function superbowlWin(rec) {
+    return rec.result == "W";
 }
-let year = record.find(superbowlWin).year;
+let year = rec.find(superbowlWin).year;
