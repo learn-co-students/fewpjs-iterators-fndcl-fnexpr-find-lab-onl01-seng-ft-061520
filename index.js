@@ -1,5 +1,11 @@
 const testVar = {}
 
 function testFunc() {
-  return "hi"
+    return "hi"
 }
+
+
+function superbowlWin(record) {
+    return record.result == "W";
+}
+let year = record.find(superbowlWin).year;
