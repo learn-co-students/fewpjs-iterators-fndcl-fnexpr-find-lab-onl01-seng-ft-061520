@@ -1,5 +1,17 @@
 const testVar = {}
 
 function testFunc() {
-  return "hi"
+    return "hi"
+}
+
+
+function superbowlWin(rec) {
+    const h = rec.find(function(i) {
+        return i.result === "W"
+    })
+    if (h) {
+        return h.year
+    }
+
+
 }
