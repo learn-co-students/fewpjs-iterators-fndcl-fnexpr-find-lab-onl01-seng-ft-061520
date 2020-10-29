@@ -6,6 +6,11 @@ function testFunc() {
 
 
 function superbowlWin(rec) {
-    return rec.result == "W";
+    rec.find(function(i) {
+        if (i.result === "W") {
+            return i.year
+        } else {
+            return undefined
+        }
+    })
 }
-let year = rec.find(superbowlWin).year;
